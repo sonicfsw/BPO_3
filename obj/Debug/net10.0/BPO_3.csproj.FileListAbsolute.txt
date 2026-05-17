@@ -1,0 +1,14 @@
+/Users/sonic_fsw/Documents/BPO_3/bin/Debug/net10.0/BPO_3
+/Users/sonic_fsw/Documents/BPO_3/bin/Debug/net10.0/BPO_3.deps.json
+/Users/sonic_fsw/Documents/BPO_3/bin/Debug/net10.0/BPO_3.runtimeconfig.json
+/Users/sonic_fsw/Documents/BPO_3/bin/Debug/net10.0/BPO_3.dll
+/Users/sonic_fsw/Documents/BPO_3/bin/Debug/net10.0/BPO_3.pdb
+/Users/sonic_fsw/Documents/BPO_3/obj/Debug/net10.0/BPO_3.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sonic_fsw/Documents/BPO_3/obj/Debug/net10.0/BPO_3.AssemblyInfoInputs.cache
+/Users/sonic_fsw/Documents/BPO_3/obj/Debug/net10.0/BPO_3.AssemblyInfo.cs
+/Users/sonic_fsw/Documents/BPO_3/obj/Debug/net10.0/BPO_3.csproj.CoreCompileInputs.cache
+/Users/sonic_fsw/Documents/BPO_3/obj/Debug/net10.0/BPO_3.dll
+/Users/sonic_fsw/Documents/BPO_3/obj/Debug/net10.0/refint/BPO_3.dll
+/Users/sonic_fsw/Documents/BPO_3/obj/Debug/net10.0/BPO_3.pdb
+/Users/sonic_fsw/Documents/BPO_3/obj/Debug/net10.0/BPO_3.genruntimeconfig.cache
+/Users/sonic_fsw/Documents/BPO_3/obj/Debug/net10.0/ref/BPO_3.dll
