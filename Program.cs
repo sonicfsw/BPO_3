@@ -155,9 +155,8 @@ class Program
             throw new ArgumentException("Число не может быть пустым.");
         }
 
-        string normalizedInput = input.Replace(',', '.');
-
-        if (!double.TryParse(normalizedInput, CultureInfo.InvariantCulture, out double value))
+        if (!double.TryParse(input, NumberStyles.Any, CultureInfo.InvariantCulture, out double value) &&
+            !double.TryParse(input, NumberStyles.Any, CultureInfo.CurrentCulture, out value))
         {
             throw new FormatException("Введите корректное число.");
         }
