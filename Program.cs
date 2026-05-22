@@ -47,8 +47,8 @@ class Program
 
                 int type = ReadInt("Ваш выбор: ", 1, 4);
                 string name = ReadRequiredString("Имя: ");
-                int age = ReadInt("Возраст: ", 0);
-                double weight = ReadDouble("Вес: ", 0);
+                int age = ReadInt("Возраст: ", 0, Animal.MaxAge);
+                double weight = ReadDouble("Вес: ", 0, Animal.MaxWeight);
 
                 return type switch
                 {
@@ -140,7 +140,7 @@ class Program
         return value;
     }
 
-    private static double ReadDouble(string prompt, double minValue)
+    private static double ReadDouble(string prompt, double minValue, double? maxValue = null)
     {
         Console.Write(prompt);
         string? input = Console.ReadLine();
@@ -161,9 +161,10 @@ class Program
             throw new FormatException("Введите корректное число.");
         }
 
-        if (value < minValue)
+        if (value < minValue || (maxValue.HasValue && value > maxValue.Value))
         {
-            throw new ArgumentException($"Введите число не меньше {minValue}.");
+            string maxText = maxValue.HasValue ? $" до {maxValue.Value}" : string.Empty;
+            throw new ArgumentException($"Введите число от {minValue}{maxText}.");
         }
 
         return value;
