@@ -7,6 +7,10 @@ namespace BPO_3.Models;
 /// </summary>
 public abstract class Animal
 {
+    public const int MaxAge = 100;
+
+    public const double MaxWeight = 2000;
+
     public string Name { get; }
 
     public int Age { get; }
@@ -15,6 +19,16 @@ public abstract class Animal
 
     protected Animal(string name, int age, double weight)
     {
+        if (age < 0 || age > MaxAge)
+        {
+            throw new ArgumentOutOfRangeException(nameof(age), $"Возраст должен быть от 0 до {MaxAge} лет.");
+        }
+
+        if (weight < 0 || weight > MaxWeight)
+        {
+            throw new ArgumentOutOfRangeException(nameof(weight), $"Вес должен быть от 0 до {MaxWeight} кг.");
+        }
+
         Name = name;
         Age = age;
         Weight = weight;
